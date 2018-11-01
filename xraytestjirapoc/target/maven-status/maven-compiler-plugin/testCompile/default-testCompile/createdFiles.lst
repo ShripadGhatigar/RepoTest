@@ -1,0 +1,5 @@
+com\xraytdgbddautomation\poc\xraytestjirapoc\utils\MyCucumber.class
+com\xraytdgbddautomation\poc\xraytestjirapoc\config\SystemProperties.class
+com\xraytdgbddautomation\poc\xraytestjirapoc\stepdef\setpDefinition.class
+com\xraytdgbddautomation\poc\xraytestjirapoc\utils\Utils.class
+com\xraytdgbddautomation\poc\xraytestjirapoc\TestSuite.class
