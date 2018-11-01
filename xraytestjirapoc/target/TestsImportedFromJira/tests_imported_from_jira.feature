@@ -8,7 +8,8 @@ Feature: Implement New Contact Page
 		Given I navigate to www.google.com
 		When I enter "latest tech in IT"
 		And I click magnifying glass icon
-		Then I can find string "latest tech in IT" in page	
+		Then I can find string "latest tech in IT" in page
+		Then Added WebHook after setting up the GitHub
 
 	
 	@XPQ-2
