@@ -17,7 +17,7 @@ Feature: Implement New Contact Page
 		When I enter "latest tech in IT"
 		And I click magnifying glass icon
 		Then I can find string "latest tech in IT" in page
-		Then Added WebHook
+		Then Added WebHook after setting up the GitHub
 		    
 		    
 		
