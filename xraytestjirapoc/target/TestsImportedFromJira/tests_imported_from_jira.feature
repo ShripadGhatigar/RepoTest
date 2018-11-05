@@ -1,5 +1,4 @@
 Feature: 
-
 	#As a User 
 	#
 	#I want to search the keywords in Retina application 
@@ -12,4 +11,3 @@ Feature:
 		When I click Send Button
 		Then I can find resources as Geonames and mesh2015extended in the response 
 		Then response status should be 200OK
-		
