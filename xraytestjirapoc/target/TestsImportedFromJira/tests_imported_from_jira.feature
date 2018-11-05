@@ -1,22 +1,15 @@
-@XPQ-1
-Feature: Implement New Contact Page
-	#Desc Implement New Contact Page
+Feature: 
 
-	
-	@XPQ-7
-	Scenario: Automation With Maven Build
-		Given I navigate to www.google.com
-		When I enter "latest tech in IT"
-		And I click magnifying glass icon
-		Then I can find string "latest tech in IT" in page	
-
-	
-	@XPQ-2
-	Scenario: Test case summary
-		Given I navigate to www.google.com
-		When I enter "latest tech in IT"
-		And I click magnifying glass icon
-		Then I can find string "latest tech in IT" in page
-		    
-		    
+	#As a User 
+	#
+	#I want to search the keywords in Retina application 
+	#
+	#So that it should render the appropriate results and Geolocations.
+	@XPQ-24
+	Scenario: Retina Implementation
+		Given I navigate to Retinal APi URL 
+		And I enter text as Paris
+		When I click Send Button
+		Then I can find resources as Geonames and mesh2015extended in the response 
+		Then response status should be 200OK
 		
