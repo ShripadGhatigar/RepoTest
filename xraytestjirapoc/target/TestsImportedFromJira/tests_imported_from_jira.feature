@@ -11,4 +11,4 @@ Feature:
 		When I click Send Button
 		Then I can find resources as Geonames and mesh2015extended in the response 
 		Then response status should be 200OK
-		Then Gitchanges
+		Then Gitchanges and Modifued
