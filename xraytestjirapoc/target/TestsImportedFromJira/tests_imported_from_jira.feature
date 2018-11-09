@@ -1,6 +1,4 @@
-Feature: 
-	#As a User 
-	#
+Feature: As a User 
 	#I want to search the keywords in Retina application 
 	#
 	#So that it should render the appropriate results and Geolocations.
