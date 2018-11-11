@@ -1,6 +1,5 @@
 Feature: As a User 
 	#I want to search the keywords in Retina application 
-	#
 	#So that it should render the appropriate results and Geolocations.
 	@XPQ-24
 	Scenario: Retina Implementation
@@ -9,3 +8,4 @@ Feature: As a User 
 		When I click Send Button
 		Then I can find resources as Geonames and mesh2015extended in the response 
 		Then response status should be 200OK
+		Then Updated in Git Hub
