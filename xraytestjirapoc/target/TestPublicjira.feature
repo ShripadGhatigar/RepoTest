@@ -1,7 +1,7 @@
 Feature: As a User 
 	#I want to search the keywords in Retina application 
 	#So that it should render the appropriate results and Geolocations.
-	@XPQ-24
+	@XA-2
 	Scenario: Retina Implementation
 		Given I navigate to Retinal APi URL 
 		And I enter text as Paris
