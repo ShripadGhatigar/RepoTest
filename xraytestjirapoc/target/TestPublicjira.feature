@@ -7,5 +7,5 @@ Feature: As a User
 		And I enter text as Paris
 		When I click Send Button
 		Then I can find resources as Geonames and mesh2015extended in the response 
-		Then response status should be 300OK
+		Then response status should be 500OK
 		
