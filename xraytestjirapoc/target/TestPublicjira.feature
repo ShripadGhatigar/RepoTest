@@ -8,3 +8,4 @@ Feature: As a User
 		When I click Send Button
 		Then I can find resources as Geonames and mesh2015extended in the response 
 		Then response status should be 200OK
+		Then Updated in Git Repo
