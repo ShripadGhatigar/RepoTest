@@ -3,41 +3,19 @@
     "line": 1,
     "elements": [
       {
-        "comments": [
-          {
-            "line": 3,
-            "value": "#As a User "
-          },
-          {
-            "line": 4,
-            "value": "#"
-          },
-          {
-            "line": 5,
-            "value": "#I want to search the keywords in Retina application "
-          },
-          {
-            "line": 6,
-            "value": "#"
-          },
-          {
-            "line": 7,
-            "value": "#So that it should render the appropriate results and Geolocations."
-          }
-        ],
-        "line": 9,
-        "name": "Retina Implementation",
+        "line": 5,
+        "name": "Xray Addon : Retina Pipeline",
         "description": "",
-        "id": ";retina-implementation",
+        "id": ";xray-addon-:-retina-pipeline",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 18994579374,
+              "duration": 708946917,
               "status": "passed"
             },
-            "line": 10,
+            "line": 6,
             "name": "I navigate to Retinal APi URL",
             "match": {
               "location": "setpDefinition.i_navigate_to_Retinal_APi_URL()"
@@ -46,34 +24,22 @@
           },
           {
             "result": {
-              "duration": 5544952868,
+              "duration": 857956414,
               "status": "passed"
             },
-            "line": 11,
+            "line": 7,
             "name": "I enter text as Paris",
             "match": {
               "location": "setpDefinition.i_enter_text_as_Paris()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 170986514,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "I click Send Button",
-            "match": {
-              "location": "setpDefinition.i_click_Send_Button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1984398262,
+              "duration": 564027982,
               "status": "passed"
             },
-            "line": 13,
+            "line": 8,
             "name": "I can find resources as Geonames and mesh2015extended in the response",
             "match": {
               "arguments": [
@@ -88,10 +54,10 @@
           },
           {
             "result": {
-              "duration": 89362623,
+              "duration": 14203199,
               "status": "passed"
             },
-            "line": 14,
+            "line": 9,
             "name": "response status should be 200OK",
             "match": {
               "arguments": [
@@ -107,8 +73,12 @@
         ],
         "tags": [
           {
-            "line": 8,
-            "name": "@XPQ-24"
+            "line": 4,
+            "name": "@XA-2"
+          },
+          {
+            "line": 4,
+            "name": "@XA-9"
           }
         ]
       }
@@ -117,6 +87,6 @@
     "description": "",
     "id": "",
     "keyword": "Feature",
-    "uri": "tests_imported_from_jira.feature"
+    "uri": "tests_imported_from_jiraXA-2.feature"
   }
 ]

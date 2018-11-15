@@ -20,7 +20,9 @@ public class MyCucumber extends Cucumber {
     @Override
     protected Runtime createRuntime(ResourceLoader resourceLoader, ClassLoader classLoader, RuntimeOptions runtimeOptions) throws InitializationError, IOException {
         Utils.makeDirectory(IMPORTED_SCENARIO_DIRECTORY);
-        Utils.importTestsFromJIRA(JIRA_USERNAME, JIRA_PASSWORD, JIRA_ROOT_URL, JIRA_ISSUE_KEYS, IMPORTED_SCENARIO_DIRECTORY + "/tests_imported_from_jira.feature");
+      //  Utils.importTestsFromGit(JIRA_USERNAME, JIRA_PASSWORD, JIRA_ROOT_URL, JIRA_PROJECT_KEY, IMPORTED_SCENARIO_DIRECTORY + "/tests_imported_from_jira.feature1");
+      //  System.out.println(JIRA_PROJECT_KEY);
+        Utils.importTestsFromJIRA(JIRA_USERNAME, JIRA_PASSWORD, JIRA_ROOT_URL, JIRA_ISSUE_KEYS, IMPORTED_SCENARIO_DIRECTORY + "/tests_imported_from_jira" +JIRA_ISSUE_KEYS+ ".feature" );
         System.out.println(JIRA_ISSUE_KEYS);
         return super.createRuntime(resourceLoader, classLoader, runtimeOptions);
     }

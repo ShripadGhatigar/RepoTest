@@ -32,10 +32,7 @@ public class setpDefinition {
 	    		 .contentType(ContentType.JSON)
 	    		 .header("apikey", "UmV0aW5hX3VzZXI6cmV0aW5hdXNlcjEyMw==");
 	   
-	    //.when().body("{\"text\":\"Paris\"}").post()
-	    //.then().assertThat().statusCode(200)
-	         
-	   
+	       
 	 	}
 
 	
@@ -46,19 +43,14 @@ public class setpDefinition {
 		
 	}
 
-	@When("^I click Send Button$")
-	public void i_click_Send_Button() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-		System.out.println("response: " + response.prettyPrint());
-	}
-
+	
 	@Then("^I can find resources as Geonames and mesh(\\d+)extended in the response$")
 	public void i_can_find_resources_as_Geonames_and_mesh_extended_in_the_response(int arg1) throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 		response.then().body("tokens[0].token", equalTo("Paris"))
 	    .extract().response();
 		String responseString = response.asString();
-		System.out.println("the resopnose String is " +responseString);
+		//System.out.println("the resopnose String is " +responseString);
 	}
 
 	@Then("^response status should be (\\d+)OK$")

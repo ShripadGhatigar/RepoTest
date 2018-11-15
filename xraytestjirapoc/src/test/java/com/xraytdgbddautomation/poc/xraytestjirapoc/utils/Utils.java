@@ -25,6 +25,30 @@ public class Utils {
             }
         }
     }
+    
+    /*public static void importTestsFromGit(String username, String password, String jiraURL, String projectKey, String pathToOutputFile) {
+        String[] command = {"C:\\Users\\shripadg\\AppData\\Local\\Apps\\curl-7.46.0-win64\\curl-7.46.0-win64\\bin\\curl.exe", "-D-", "-X", "POST", "-H",
+                "Authorization: Basic " + encodeBase64String(username + ":" + password),
+                jiraURL + "/rest/raven/1.0/import/feature/projectKey=" + projectKey, "-o", pathToOutputFile
+        };
+        ProcessBuilder process = new ProcessBuilder(command);
+        Process p;
+        try {
+            System.out.println("\ninfo: Starting process that accepts curl POST command\n");
+            p = process.start();
+        } catch (IOException e) {
+            System.out.print("\nerror: Tried to execute curl command and output to a file, something went wrong\n");
+            e.printStackTrace();
+        }
+        do {
+            System.out.println("\ninfo: Checking if tests are imported and put in a new file\n");
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException ex) {
+                Thread.currentThread().interrupt();
+            }
+        } while (!fileExists(pathToOutputFile));
+    }*/
 
     public static void importTestsFromJIRA(String username, String password, String jiraURL, String jiraKeys, String pathToOutputFile) {
         String[] command = {"C:\\Users\\shripadg\\AppData\\Local\\Apps\\curl-7.46.0-win64\\curl-7.46.0-win64\\bin\\curl.exe", "-D-", "-X", "GET", "-H",
@@ -50,6 +74,11 @@ public class Utils {
         } while (!fileExists(pathToOutputFile));
     }
 
+    
+    
+    
+    
+    
     public static void exportReportToJIRA(String username, String password, String jiraURL, String reportFilePath) {
         String[] command = {"C:\\Users\\shripadg\\AppData\\Local\\Apps\\curl-7.46.0-win64\\curl-7.46.0-win64\\bin\\curl.exe", "-D-", "-X", "POST",
                 "-H", "Content-Type: application/json",
